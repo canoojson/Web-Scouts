@@ -10,4 +10,6 @@ Con respecto a los permisos se trabajara de la siguiente manera:
 
     -Usuario cliente: Este es el usuario responsable del educando, tendra permisos para ver fotos y consultar el calendario de actividades. No podra subir, ni editar ni eliminar.
 
-    -Usuario responsable de seccion: Este es el usuario responsable de una seccion, tendra
+    -Usuario responsable de seccion: Este es el usuario responsable de una seccion, tendra acceso solo a los archivos de su propia seccion y podra ver, subir, editar y eliminar.
+
+    -Usuario administrador: Este es el usuario con todos los permisos, puede ver, crear, editar, eliminar cualquier archivo de cualquier seccion.
