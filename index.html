@@ -2,22 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Impeesa 243</title>
-    <link rel="shortcut icon" href="img/favIcon-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+
+    <meta name="description" content="Pagina web del Grupo Scout Impeesa 243 de Burjassot">
+
+    <meta property="og:title" content="Pagina web de un Grupo Scout"> 
+    <meta property="og:description" content="Pagina web del Grupo Scout Impeesa 243">
+    <meta property="og:image" content="img/favIcon-removebg-preview.png">
+    <meta property="og:image:alt" content="Logo del grupo">
+
+    <link rel="alternate" href="https://" hreflang="en_GB">
+    <link rel="canonical" href="https://">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#C500FF">
+
+    <link rel="Icon" href="img/favIcon-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
+
     <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Imagenes</a>
-            <a href="#">Documentos</a>
-            <a href="#">Contactos</a>
-        </nav>
-        <section class="textos-header">
-            <h1>Grupo Scout Impeesa 243 de Burjassot</h1>
-        </section>
+        <img src="img/favIcon-removebg-preview.png" height="75" width="75">
+        <div>
+            <h1>Grupo Scout Impeesa 243</h1>
+            <p><h3>¡Donde la aventura comienza!</h3></p>
+        </div>
+        
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-scroller">
+        <button class="prev-button" onclick="changeImage(-1)">&#8249;</button>
+        <img src="img/imagen1.jpg" alt="Imagen" id="mainImage">
+        <button class="next-button" onclick="changeImage(1)">&#8250;</button>
+    </div>
+
+    <script src="Js/imageScroller.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Grupo Scout XYZ</p>
+    </footer>
+
 </body>
 </html>
