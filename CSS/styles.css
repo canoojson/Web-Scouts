@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
+    
 }
 
 header {
@@ -22,9 +23,10 @@ header {
 }
 
 #mainImage {
-    margin-top: 75px;
+    margin-top: 50px;
     max-width: 80%; /* Ajusta el tamaño máximo según tu preferencia */
     max-height: 60vh; /* Ajusta la altura máxima según tu preferencia */
+    margin-bottom: 75px;
     object-fit: cover;
 }
 
@@ -87,10 +89,10 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
     padding: 0;
     z-index: 1;
-    width: auto;
+    width: 15cm;
 }
 
 nav ul li:hover > ul {
@@ -234,3 +236,57 @@ footer {
     background-color: #2980b9;
 }
 
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto; /* Centra horizontalmente */
+    flex: 1; /* Toma el espacio disponible entre la barra de navegación y el footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido del formulario */
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #007BFF;
+    background-color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

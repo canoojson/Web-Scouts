@@ -62,7 +62,7 @@
                     <li><a href="#">Album</a></li>
                 </ul>
             </li>
-            <li><a href="Pages/Contacto.html">Contacto</a></li>
+            <li><a href="/Web-Scouts/Pages/Contacto.html">Contacto</a></li>
         </ul>
         <div class="auth-options">
             <button id="showLogin">Iniciar sesión</button>
@@ -70,6 +70,56 @@
     </nav>
 </head>
 <body>
+    <main>
+        <dialog id="dialogLogin">
+            <button id="closeDialog">✕</button>
+            <h2>Iniciar Sesion</h2>
+            <form method="post" action="/">
+                <label for="nombreUsuario">Usuario:</label>
+                <input type="text" id="nombreUsuario" name="username" placeholder="Nombre de Usuario" required>
+                <label for="contrasenya">Contraseña:</label>
+                <input type="password" id="contrasenya" name="password" placeholder="Contraseña" required>
+                <button type="button">Iniciar Sesión</button>
+                <button type="button">He olvidado mi contraseña</button>
+            </form>
+        </dialog>
+        <script>
+            window.showLogin.addEventListener('click',()=>{
+                window.dialogLogin.showModal()
+            })
+            window.closeDialog.addEventListener('click', ()=>{
+                window.dialogLogin.close()
+            })
+        </script>
+    </main>
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form action="enviar_consulta.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje/Consulta:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Enviar Consulta</button>
+            </div>
+        </form>
+    </div>
     <footer>
         <p>&copy; 2024 Grupo Scout Impeesa 243 de Burjassot</p>
     </footer>
