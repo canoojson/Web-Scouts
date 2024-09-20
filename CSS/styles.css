@@ -244,6 +244,8 @@ footer {
     max-width: 400px;
     width: 100%;
     margin: auto; /* Centra horizontalmente */
+    margin-top: 50px;
+    margin-bottom: 75px;
     flex: 1; /* Toma el espacio disponible entre la barra de navegación y el footer */
     display: flex;
     flex-direction: column;
