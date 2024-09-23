@@ -263,12 +263,13 @@ footer {
 
 .form-group input, 
 .form-group textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f9f9f9;
+    resize: none;
 }
 
 .form-group input:focus, 
