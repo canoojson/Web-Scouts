@@ -53,7 +53,7 @@ header {
 }
 
 header img {
-    margin-right: 10px; /* Ajusta el margen entre la imagen y el texto según tu preferencia */
+    margin-right: 10px;
 }
 
 nav {
@@ -61,7 +61,6 @@ nav {
     color: #ecf0f1;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
 }
 
 ul li ul {
@@ -77,7 +76,7 @@ ul li ul {
         display: block;
         padding: 1em;
         &:hover{
-          color: #af54ff;
+          background-color: #ccc;
           transition: color 0.2s;
         }
       }
@@ -103,7 +102,7 @@ nav ul li:hover > ul {
 nav ul {
     list-style: none;
     position: relative;
-    display: inline-table;
+    display: table-column;
     width: 100%;
 }
 
@@ -121,7 +120,6 @@ nav ul a {
 
 nav ul ul li {
     float: none;
-    width: 200px;
 }
 
 nav ul ul a {
@@ -131,10 +129,11 @@ nav ul ul a {
 
 .auth-options {
     display: flex;
+    width: 200px;
 }
 
 .auth-options button {
-    margin-left: 15px;
+    margin-left: 60px;
     color: #000000;
     background: transparent;
     border: transparent;
@@ -143,8 +142,7 @@ nav ul ul a {
     font-size: medium;
     cursor: pointer;
     &:hover{
-        color: #af54ff;
-        transition: color 0.2s;
+        background-color: #ccc;
       }
 }
 
@@ -157,9 +155,9 @@ nav a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+    
     &:hover{
-        color: #af54ff;
-        transition: color 0.2s;
+        background-color: #ccc;
       }
 }
 
