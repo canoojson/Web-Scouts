@@ -2,9 +2,7 @@
 En este proyecto se desarrolla una pagina web para el grupo scout Impeesa 243 de Burjassot, en el cual se muestran las fotografias tomadas por el grupo,
 un apartado de inscripciones y un apartado de solicitudes de prueba.
 
-Ademas tiene un sistema de login para que los adultos responsables del educando, que permite ver todas las fotos publicadas y un calendario con las actividades programadas.
-
-Para los educadores hay una seccion en la cual pueden consultar todos los documentos, crear nuevos, editarlos y eliminarlos, siempre y cuando tengan acceso a ese listado.
+Ademas tiene un sistema de login para los usuarios, que permite ver todas las fotos publicadas y un calendario con las actividades programadas.
 
 Con respecto a los permisos se trabajara de la siguiente manera:
 
