@@ -70,6 +70,29 @@
     </nav>
 </head>
 <body>
-    
+    <main>
+        <dialog id="dialogLogin">
+            <button id="closeDialog">✕</button>
+            <h2>Iniciar Sesion</h2>
+            <form method="post" action="/">
+                <label for="nombreUsuario">Usuario:</label>
+                <input type="text" id="nombreUsuario" name="username" placeholder="Nombre de Usuario">
+                <label for="contrasenya">Contraseña:</label>
+                <input type="password" id="contrasenya" name="password">
+                <button type="button">Iniciar Sesión</button>
+                <button type="button">He olvidado mi contraseña</button>
+            </form>
+        </dialog>
+
+
+        <script>
+            window.showLogin.addEventListener('click',()=>{
+                window.dialogLogin.showModal()
+            })
+            window.closeDialog.addEventListener('click', ()=>{
+                window.dialogLogin.close()
+            })
+        </script>
+    </main>
 </body>
 </html>
