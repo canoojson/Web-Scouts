@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Inicio</title>
@@ -9,8 +9,9 @@
 
     <meta property="og:title" content="Pagina web de un Grupo Scout"> 
     <meta property="og:description" content="Pagina web del Grupo Scout Impeesa 243">
-    <meta property="og:image" content="img/favIcon-removebg-preview.png">
+    <meta property="og:image" content="/img/favIcon-removebg-preview.png">
     <meta property="og:image:alt" content="Logo del grupo">
+    <meta name="viewport" content="width=device-width">
 
     <link rel="alternate" href="https://" hreflang="en_GB">
     <link rel="canonical" href="https://">
@@ -20,57 +21,50 @@
 
     <link rel="Icon" href="/img/favIcon-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="/CSS/styles.css">
-
-    <header>
-        <img src="/img/favIcon-removebg-preview.png" height="100" width="100">
-        <div>
-            <h1>Grupo Scout Impeesa 243</h1>
-            <p><h3>¡Donde la aventura comienza!</h3></p>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="#">Actividades</a>
-                <ul>
-                    <li><a href="/Pages/Actividades/A_Castores.html">Castores</a></li>
-                    <li><a href="/Pages/Actividades/A_Manada.html">Manada</a></li>
-                    <li><a href="/Pages/Actividades/A_Tropa.html">Tropa</a></li>
-                    <li><a href="/Pages/Actividades/A_Clan.html">Clan</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Historia</a>
-                <ul>
-                    <li><a href="/Pages/Historia/H_Grupo.html">Grupo</a></li>
-                    <li><a href="/Pages/Historia/H_Escultimso.html">Escultismo</a></li>
-                    <li><a href="/Pages/Historia/H_Secciones.html">Secciones</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Documentos</a>
-                <ul>
-                    <li><a href="/Pages/Documentos/D_Inscripcion.html">Inscripcion</a></li>
-                    <li><a href="/Pages/Documentos/D_Seguro.html">Seguro</a></li>
-                    <li><a href="/Pages/Documentos/D_CPTM.html">Como preparar tu mochila</a></li>
-                    <li><a href="/Pages/Documentos/D_Nudos.html">Nudos</a></li>
-                    <li><a href="/Pages/Documentos/D_Codigos.html">Codigos</a></li>
-                    <li><a href="/Pages/Documentos/D_Construcciones.html">Construcciones</a></li>
-                    <li><a href="/Pages/Documentos/D_Album.html">Album</a></li>
-                </ul>
-            </li>
-            <li><a href="/Pages/Contacto.html">Contacto</a></li>
-        </ul>
-        <div class="auth-options">
-            <button id="showLogin">Iniciar sesión</button>
-        </div>
-    </nav>
 </head>
 <body>
-    <main>
+    <header>
+        <img src="/img/imagenEncabezado.png" alt="Logo del grupo Scout" class="logo">
+        
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <div class="dropdown">
+                <a href="#">Actividades</a>
+                <div class="dropdown-content">
+                    <a href="/Pages/Actividades/A_Castores.html">Castores</a>
+                    <a href="/Pages/Actividades/A_Manada.html">Manada</a>
+                    <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
+                    <a href="/Pages/Actividades/A_Clan.html">Clan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Historia</a>
+                <div class="dropdown-content">
+                    <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
+                    <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
+                    <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Documentos</a>
+                <div class="dropdown-content">
+                    <a href="/Pages/Documentos/D_Inscripcion.html">Inscripcion</a>
+                    <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
+                    <a href="/Pages/Documentos/D_CPTM.html">Como preparar tu mochila</a>
+                    <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
+                    <a href="/Pages/Documentos/D_Codigos.html">Codigos</a>
+                </div>
+            </div>
+            <a href="/Pages/Galeria/galeria.html">Galería</a>
+            <a href="/Pages/Contacto.html">Contacto</a>
+        </nav>
+    <!--<div class="desktop-only">
+        <button class="login-button" id="showLogin">Iniciar Sesión</button>
+    </div>
+    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>-->
+    </header>
+<body>
+    <!--<main>
         <dialog id="dialogLogin">
             <button id="closeDialog">✕</button>
             <h2>Iniciar Sesion</h2>
@@ -93,6 +87,6 @@
                 window.dialogLogin.close()
             })
         </script>
-    </main>
+    </main>-->
 </body>
 </html>
