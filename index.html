@@ -23,6 +23,19 @@
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
+    <script>
+        // Función para mostrar el popup basado en el parámetro 'status' en la URL
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status'); // Obtiene el valor de 'status'
+
+            if (status === 'success') {
+                alert("¡El mensaje se ha enviado correctamente!");
+            } else if (status === 'error') {
+                alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+            }
+        };
+    </script>
     <header>
         <img src="img/imagenEncabezado.png" alt="Logo del grupo Scout" class="logo">
         
@@ -85,9 +98,6 @@
             <img src="img/imagen1.jpg" alt="Imagen" id="mainImage">
             <button class="next-button" onclick="changeImage(1)">&#8250;</button>
         </div>
-
-        <script src="Js/nightMode.js"></script>
-        <script src="Js/loginScreen.js"></script>
         <script src="Js/imageScroller.js"></script>
     </main>
     <div>
