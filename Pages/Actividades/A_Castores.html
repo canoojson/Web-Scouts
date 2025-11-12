@@ -1,105 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Actividades Castores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castores - Grupo Scout Impeesa 243</title>
 
-    <meta name="description" content="Pagina web del Grupo Scout Impeesa 243 de Burjassot">
+  <meta name="description" content="Actividades y aventuras de la colonia de Castores del Grupo Scout Impeesa 243 de Burjassot.">
+  <meta property="og:title" content="Castores - Grupo Scout Impeesa 243">
+  <meta property="og:description" content="Descubre las actividades y experiencias de los Castores del Grupo Scout Impeesa 243.">
+  <meta property="og:image" content="/img/logoImpeesa.png">
+  <meta property="og:image:alt" content="Logo del Grupo Scout Impeesa 243">
+  <meta name="theme-color" content="#2C5234">
 
-    <meta property="og:title" content="Pagina web de un Grupo Scout"> 
-    <meta property="og:description" content="Pagina web del Grupo Scout Impeesa 243">
-    <meta property="og:image" content="/img/favIcon-removebg-preview.png">
-    <meta property="og:image:alt" content="Logo del grupo">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="alternate" href="https://" hreflang="en_GB">
-    <link rel="canonical" href="https://">
-
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#C500FF">
-
-    <link rel="Icon" href="/img/favIcon-removebg-preview.png" type="image/png">
-    <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="icon" href="/img/logoImpeesa.png" type="image/png">
+  <link rel="stylesheet" href="/CSS/castores.css">
 </head>
+
 <body>
-    <header>
-        <img src="/img/imagenEncabezado.png" alt="Logo del grupo Scout" class="logo">
-        
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <div class="dropdown">
-                <a href="#">Actividades</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Actividades/A_Castores.html">Castores</a>
-                    <a href="/Pages/Actividades/A_Manada.html">Manada</a>
-                    <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
-                    <a href="/Pages/Actividades/A_Clan.html">Clan</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Historia</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
-                    <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
-                    <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Documentos</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Documentos/D_Inscripcion.html">Inscripcion</a>
-                    <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
-                    <a href="/Pages/Documentos/D_CPTM.html">Como preparar tu mochila</a>
-                    <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
-                    <a href="/Pages/Documentos/D_Codigos.html">Codigos</a>
-                </div>
-            </div>
-            <a href="/Pages/Galeria/Galeria.html">Galería</a>
-            <a href="/Pages/Contacto.html">Contacto</a>
-        </nav>
-    <!--<div class="desktop-only">
-        <button class="login-button" id="showLogin">Iniciar Sesión</button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <img src="/img/imagenEncabezado.png" alt="Logo del Grupo Scout Impeesa 243" class="logo">
+
+      <nav class="nav">
+        <a href="/index.html">Inicio</a>
+        <div class="dropdown">
+          <a href="#" class="active">Actividades</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Actividades/A_Castores.html">Castores</a>
+            <a href="/Pages/Actividades/A_Manada.html">Manada</a>
+            <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
+            <a href="/Pages/Actividades/A_Clan.html">Clan</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Historia</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
+            <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
+            <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Documentos</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Documentos/D_Inscripcion.html">Inscripción</a>
+            <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
+            <a href="/Pages/Documentos/D_CPTM.html">Cómo preparar tu mochila</a>
+            <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
+            <a href="/Pages/Documentos/D_Codigos.html">Códigos</a>
+          </div>
+        </div>
+        <a href="/Pages/Galeria/galeria.html">Galería</a>
+        <a href="/Pages/Contacto.html">Contacto</a>
+      </nav>
     </div>
-    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>-->
-    </header>
-<body>
-    <!--<main>
-        <dialog id="dialogLogin">
-            <button id="closeDialog">✕</button>
-            <h2>Iniciar Sesion</h2>
-            <form method="post" action="/">
-                <label for="nombreUsuario">Usuario:</label>
-                <input type="text" id="nombreUsuario" name="username" placeholder="Nombre de Usuario">
-                <label for="contrasenya">Contraseña:</label>
-                <input type="password" id="contrasenya" name="password">
-                <button type="button">Iniciar Sesión</button>
-                <button type="button">He olvidado mi contraseña</button>
-            </form>
-        </dialog>
+  </header>
 
-
-        <script>
-            window.showLogin.addEventListener('click',()=>{
-                window.dialogLogin.showModal()
-            })
-            window.closeDialog.addEventListener('click', ()=>{
-                window.dialogLogin.close()
-            })
-        </script>
-    </main>-->
-
-    <div class="publicacion">
-        <img src="/img/imagen2.jpg" alt="Imagen de la publicacion">
-            <div class="contenido">
-                <h2>Título de la publicación</h2>
-                <p class="fecha">Publicado el 2 de abril de 2025</p>
-                <p>Este es el contenido de la publicación. Se puede agregar mas texto aquí.</p>
-            </div>
+  <!-- HERO -->
+  <section class="hero-castores">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Castores</h1>
+        <p>Los más pequeños del grupo aprenden jugando, explorando y compartiendo aventuras llenas de diversión y valores scout.</p>
+      </div>
     </div>
+  </section>
 
+  <!-- CONTENIDO -->
+  <main class="container">
+    <section class="publicacion">
+      <img src="/img/imagen2.jpg" alt="Castores en actividad" class="publicacion-img">
+      <div class="contenido">
+        <h2>Día de Aventuras en el Parque Natural</h2>
+        <p class="fecha">Publicado el 2 de abril de 2025</p>
+        <p>
+          Los castores disfrutaron de una jornada llena de juegos, naturaleza y trabajo en equipo. Aprendieron sobre el entorno y reforzaron los valores de respeto y compañerismo.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Grupo Scout Impeesa 243 de Burjassot · Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
-<footer>
-    <p>&copy; 2025 Grupo Scout Impeesa 243 de Burjassot</p>
-</footer>
 </html>

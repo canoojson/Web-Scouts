@@ -1,108 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Inicio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Scout Impeesa 243 - Burjassot</title>
+  <meta name="description" content="Página oficial del Grupo Scout Impeesa 243 de Burjassot. Conoce nuestras actividades, historia y cómo unirte.">
 
-    <meta name="description" content="Pagina web del Grupo Scout Impeesa 243 de Burjassot">
+  <meta property="og:title" content="Grupo Scout Impeesa 243 - Burjassot">
+  <meta property="og:description" content="Descubre nuestras secciones, actividades y espíritu scout.">
+  <meta property="og:image" content="img/logoImpeesa.png">
+  <meta property="og:image:alt" content="Logo del Grupo Scout Impeesa 243">
+  <meta name="theme-color" content="#2C5234">
 
-    <meta property="og:title" content="Pagina web de un Grupo Scout"> 
-    <meta property="og:description" content="Pagina web del Grupo Scout Impeesa 243">
-    <meta property="og:image" content="img/favIcon-removebg-preview.png">
-    <meta property="og:image:alt" content="Logo del grupo">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="alternate" href="https://" hreflang="en_GB">
-    <link rel="canonical" href="https://">
-
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#C500FF">
-
-    <link rel="Icon" href="/img/favIcon-removebg-preview.png" type="image/png">
-    <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="icon" href="/img/logoImpeesa.png" type="image/png">
+  <link rel="stylesheet" href="/CSS/index.css">
 </head>
+
 <body>
-    <script>
-        // Función para mostrar el popup basado en el parámetro 'status' en la URL
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const status = urlParams.get('status'); // Obtiene el valor de 'status'
+  <header class="header">
+    <div class="container header-container">
+      <img src="img/imagenEncabezado.png" alt="Logo del Grupo Scout Impeesa 243" class="logo">
 
-            if (status === 'success') {
-                alert("¡El mensaje se ha enviado correctamente!");
-            } else if (status === 'error') {
-                alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
-            }
-        };
-    </script>
-    <header>
-        <img src="img/imagenEncabezado.png" alt="Logo del grupo Scout" class="logo">
-        
-        <nav>
-            <a href="#">Inicio</a>
-            <div class="dropdown">
-                <a href="#">Actividades</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Actividades/A_Castores.html">Castores</a>
-                    <a href="/Pages/Actividades/A_Manada.html">Manada</a>
-                    <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
-                    <a href="/Pages/Actividades/A_Clan.html">Clan</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Historia</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
-                    <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
-                    <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Documentos</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Documentos/D_Inscripcion.html">Inscripcion</a>
-                    <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
-                    <a href="/Pages/Documentos/D_CPTM.html">Como preparar tu mochila</a>
-                    <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
-                    <a href="/Pages/Documentos/D_Codigos.html">Codigos</a>
-                </div>
-            </div>
-            <a href="Pages/Galeria/galeria.html">Galería</a>
-            <a href="Pages/Contacto.html">Contacto</a>
-        </nav>
-    <!--<div class="desktop-only">
-        <button class="login-button" id="showLogin">Iniciar Sesión</button>
-    </div>
-    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>-->
-    </header>
-
-    <!--<dialog id="dialogLogin">
-        <button id="closeDialog">✕</button>
-        <h2>Iniciar Sesion</h2>
-        <form method="post" action="/">
-            <label for="nombreUsuario">Usuario:</label>
-            <input type="text" id="nombreUsuario" name="username" placeholder="Nombre de Usuario">
-            <label for="contrasenya">Contraseña:</label>
-            <input type="password" id="contrasenya" name="password">
-            <button type="button">Iniciar Sesión</button>
-            <button type="button">He olvidado mi contraseña</button>
-        </form>
-    </dialog>-->
-
-    <main>
-        <div class="image-scroller">
-            <button class="prev-button" onclick="changeImage(-1)">&#8249;</button>
-            <img src="img/imagen1.jpg" alt="Imagen" id="mainImage">
-            <button class="next-button" onclick="changeImage(1)">&#8250;</button>
+      <nav class="nav">
+        <a href="#" class="active">Inicio</a>
+        <div class="dropdown">
+          <a href="#">Actividades</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Actividades/A_Castores.html">Castores</a>
+            <a href="/Pages/Actividades/A_Manada.html">Manada</a>
+            <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
+            <a href="/Pages/Actividades/A_Clan.html">Clan</a>
+          </div>
         </div>
-        <script src="Js/imageScroller.js"></script>
-    </main>
-    <div>
-        
+        <div class="dropdown">
+          <a href="#">Historia</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
+            <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
+            <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Documentos</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Documentos/D_Inscripcion.html">Inscripción</a>
+            <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
+            <a href="/Pages/Documentos/D_CPTM.html">Cómo preparar tu mochila</a>
+            <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
+            <a href="/Pages/Documentos/D_Codigos.html">Códigos</a>
+          </div>
+        </div>
+        <a href="Pages/Galeria/galeria.html">Galería</a>
+        <a href="Pages/Contacto.html">Contacto</a>
+      </nav>
     </div>
-    <footer>
-        <p>&copy; 2025 Grupo Scout Impeesa 243 de Burjassot</p>
-    </footer>
+  </header>
+
+  <!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Grupo Scout Impeesa 243</h1>
+      <p>Descubre la aventura, la naturaleza y los valores del escultismo en Burjassot.</p>
+      <a href="Pages/Documentos/D_Inscripcion.html" class="cta-button">Únete a nosotros</a>
+    </div>
+  </div>
+</section>
+
+<script src="Js/heroCarousel.js"></script>
+
+
+  <!-- SECCIÓN DE PRESENTACIÓN -->
+  <section class="about container">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos el Grupo Scout Impeesa 243 de Burjassot, una comunidad educativa basada en el escultismo. 
+      Promovemos el desarrollo personal, la vida en la naturaleza y la participación activa de niños, jóvenes y adultos.</p>
+  </section>
+
+  <!-- SECCIÓN DE ACTIVIDADES -->
+  <section class="activities container">
+    <h2>Nuestras Secciones</h2>
+    <div class="activity-grid">
+      <div class="activity-card">
+        <img src="img/castores.png" alt="Castores" style="width: fit-content;">
+        <h3>Castores</h3>
+        <p>Los más pequeños descubren el trabajo en equipo y la naturaleza de forma divertida.</p>
+      </div>
+      <div class="activity-card">
+        <img src="img/manada.png" alt="Manada" style="width: fit-content;">
+        <h3>Manada</h3>
+        <p>Aprenden valores y autonomía a través de juegos y aventuras.</p>
+      </div>
+      <div class="activity-card">
+        <img src="img/tropa.png" alt="Tropa" style="width: fit-content;">
+        <h3>Tropa</h3>
+        <p>Desarrollan liderazgo, creatividad y compromiso con la comunidad.</p>
+      </div>
+      <div class="activity-card">
+        <img src="img/clan.png" alt="Clan" style="width: fit-content;">
+        <h3>Clan</h3>
+        <p>Jóvenes comprometidos con el servicio, el crecimiento personal y la sociedad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE CONTACTO RÁPIDO -->
+  <section class="join">
+    <h2>¿Quieres formar parte?</h2>
+    <p>Únete al movimiento scout y vive experiencias que te acompañarán toda la vida.</p>
+    <a href="Pages/Contacto.html" class="cta-button">Contáctanos</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Grupo Scout Impeesa 243 de Burjassot · Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
 </html>

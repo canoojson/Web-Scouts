@@ -1,133 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Contacto</title>
-    
-        <meta name="description" content="Pagina web del Grupo Scout Impeesa 243 de Burjassot">
-    
-        <meta property="og:title" content="Pagina web de un Grupo Scout"> 
-        <meta property="og:description" content="Pagina web del Grupo Scout Impeesa 243">
-        <meta property="og:image" content="/img/favIcon-removebg-preview.png">
-        <meta property="og:image:alt" content="Logo del grupo">
-        <meta name="viewport" content="width=device-width">
-    
-        <link rel="alternate" href="https://" hreflang="en_GB">
-        <link rel="canonical" href="https://">
-    
-        <meta name="robots" content="index, follow">
-        <meta name="theme-color" content="#C500FF">
-    
-        <link rel="Icon" href="/img/favIcon-removebg-preview.png" type="image/png">
-        <link rel="stylesheet" href="/CSS/styles.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Grupo Scout Impeesa 243</title>
+
+  <meta name="description" content="Ponte en contacto con el Grupo Scout Impeesa 243 de Burjassot.">
+  <meta property="og:title" content="Contacto - Grupo Scout Impeesa 243">
+  <meta property="og:description" content="Envía tus dudas o solicita información sobre nuestras actividades.">
+  <meta property="og:image" content="/img/logoImpeesa.png">
+  <meta property="og:image:alt" content="Logo del Grupo Scout Impeesa 243">
+  <meta name="theme-color" content="#2C5234">
+
+  <link rel="icon" href="/img/logoImpeesa.png" type="image/png">
+  <link rel="stylesheet" href="/CSS/contacto.css">
+</head>
+
 <body>
-    <header>
-        <img src="/img/imagenEncabezado.png" alt="Logo del grupo Scout" class="logo">
-        
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <div class="dropdown">
-                <a href="#">Actividades</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Actividades/A_Castores.html">Castores</a>
-                    <a href="/Pages/Actividades/A_Manada.html">Manada</a>
-                    <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
-                    <a href="/Pages/Actividades/A_Clan.html">Clan</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Historia</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
-                    <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
-                    <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Documentos</a>
-                <div class="dropdown-content">
-                    <a href="/Pages/Documentos/D_Inscripcion.html">Inscripcion</a>
-                    <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
-                    <a href="/Pages/Documentos/D_CPTM.html">Como preparar tu mochila</a>
-                    <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
-                    <a href="/Pages/Documentos/D_Codigos.html">Codigos</a>
-                </div>
-            </div>
-            <a href="/Pages/Galeria/galeria.html">Galería</a>
-            <a href="/Pages/Contacto.html">Contacto</a>
-        </nav>
-    <!--<div class="desktop-only">
-        <button class="login-button" id="showLogin">Iniciar Sesión</button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <img src="/img/imagenEncabezado.png" alt="Logo del Grupo Scout Impeesa 243" class="logo">
+
+      <nav class="nav">
+        <a href="/index.html">Inicio</a>
+        <div class="dropdown">
+          <a href="#">Actividades</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Actividades/A_Castores.html">Castores</a>
+            <a href="/Pages/Actividades/A_Manada.html">Manada</a>
+            <a href="/Pages/Actividades/A_Tropa.html">Tropa</a>
+            <a href="/Pages/Actividades/A_Clan.html">Clan</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Historia</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Historia/H_Grupo.html">Grupo</a>
+            <a href="/Pages/Historia/H_Escultimso.html">Escultismo</a>
+            <a href="/Pages/Historia/H_Secciones.html">Secciones</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Documentos</a>
+          <div class="dropdown-content">
+            <a href="/Pages/Documentos/D_Inscripcion.html">Inscripción</a>
+            <a href="/Pages/Documentos/D_Seguro.html">Seguro</a>
+            <a href="/Pages/Documentos/D_CPTM.html">Cómo preparar tu mochila</a>
+            <a href="/Pages/Documentos/D_Nudos.html">Nudos</a>
+            <a href="/Pages/Documentos/D_Codigos.html">Códigos</a>
+          </div>
+        </div>
+        <a href="/Pages/Galeria/galeria.html">Galería</a>
+        <a href="/Pages/Contacto.html" class="active">Contacto</a>
+      </nav>
     </div>
-    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>-->
-    </header>
+  </header>
 
-    <!--<dialog id="dialogLogin">
-        <button id="closeDialog">✕</button>
-        <h2>Iniciar Sesion</h2>
-        <form method="post" action="/">
-            <label for="nombreUsuario">Usuario:</label>
-            <input type="text" id="nombreUsuario" name="username" placeholder="Nombre de Usuario">
-            <label for="contrasenya">Contraseña:</label>
-            <input type="password" id="contrasenya" name="password">
-            <button type="button">Iniciar Sesión</button>
-            <button type="button">He olvidado mi contraseña</button>
-        </form>
-    </dialog>-->
-    <div class="form-container">
-        <h2>Formulario de Contacto</h2>
-        <form id="contactForm" action="http://localhost:8080/Web-Scouts/enviar.php" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje/Consulta:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="submit" class="submit-btn">Enviar Consulta</button>
-            </div>
-        </form>
-<!--
-        <script>
-            document.getElementById("contactForm").addEventListener("submit", async function(event) {
-    event.preventDefault();  // Evita que el formulario se envíe de forma tradicional
-
-    const formData = new FormData(this);  // Crea un objeto con los datos del formulario
-
-    try {
-        const response = await fetch("enviar.php", {
-            method: "POST",  // Usa el método POST
-            body: formData   // Los datos del formulario se envían en el cuerpo de la solicitud
-        });
-
-        const result = await response.text();  // Obtiene la respuesta del servidor
-        alert(result);  // Muestra la respuesta en un mensaje de alerta
-
-    } catch (error) {
-        alert("Error en la solicitud: " + error);  // Si hay un error con AJAX
-    }
-});
-        </script>
-        -->
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Contáctanos</h1>
+        <p>¿Tienes preguntas o quieres unirte al grupo? Envíanos un mensaje, estaremos encantados de ayudarte.</p>
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Grupo Scout Impeesa 243 de Burjassot</p>
-    </footer>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="contact-form-section container">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm" action="http://localhost:8080/Web-Scouts/enviar.php" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje / Consulta</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="cta-button">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Grupo Scout Impeesa 243 de Burjassot · Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,164 @@
+/* ===== ESTRUCTURA GENERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== CABECERA ===== */
+.header {
+  background-color: #2C5234;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 65px;
+}
+
+.nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #FFD700;
+  bottom: -4px;
+  left: 0;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 10;
+}
+.dropdown-content a {
+  color: #222;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* --- HERO --- */
+.hero-castores {
+  position: relative;
+  height: 35vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-castores::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* --- PUBLICACIÓN --- */
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.publicacion {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.publicacion-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 2rem;
+}
+
+.contenido h2 {
+  color: #2C5234;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #2C5234;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}

@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const images = ['img/imagen1.jpg', 'img/imagen2.jpg', 'img/imagen3.jpg']; // Agrega las rutas de tus imágenes
+const images = ['img/imagen1.jpg', 'img/imagen2.jpg', 'img/imagen3.jpg', 'img/imagen4.jpg', 'img/imagen5.jpg']; // Agrega las rutas de tus imágenes
 const intervalTime = 4000; // Cambia la imagen cada 4 segundos
 let intervalId;
 
