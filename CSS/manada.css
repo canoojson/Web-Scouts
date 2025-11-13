@@ -83,7 +83,6 @@ body {
   display: block;
 }
 
-
 /* ===== HERO (MISMO ESTILO QUE INICIO Y CONTACTO) ===== */
 .hero-castores {
   position: relative;
@@ -166,8 +165,6 @@ main.container {
   color: #777;
   margin-bottom: 1rem;
 }
-
-/* ===== FOOTER ===== */
 .footer {
   background-color: #1B3320;
   color: #ddd;
@@ -175,7 +172,6 @@ main.container {
   padding: 1.5rem 0;
   font-size: 0.9rem;
 }
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
