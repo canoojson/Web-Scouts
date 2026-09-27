@@ -88,7 +88,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 60vh;
+  min-height: 400px; /* evita que el texto se corte en pantallas bajas */
+  padding: 0; /* anula el padding general de section para que el overlay cubra toda la imagen */
   display: flex;
   align-items: center;
   justify-content: center;

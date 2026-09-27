@@ -85,15 +85,21 @@ body {
 
 
 /* ===== HERO (MISMO ESTILO QUE INICIO Y CONTACTO) ===== */
-.hero-castores {
+.hero-seccion {
   position: relative;
   height: 55vh;
-  background-image: url("/img/castoresHero.jpg"); /* PON AQUÍ TU IMAGEN */
+  background-image: url("../img/imagen1.jpg"); /* Imagen por defecto */
   background-size: cover;
   background-position: center;
 }
 
-.hero-castores::before {
+/* Imagen de cabecera de cada sección (rutas relativas a este CSS) */
+.hero-castores { background-image: url("../img/imagen1.jpg"); }
+.hero-manada   { background-image: url("../img/imagen2.jpg"); }
+.hero-tropa    { background-image: url("../img/imagen3.jpg"); }
+.hero-clan     { background-image: url("../img/imagen4.JPG"); }
+
+.hero-seccion::before {
   content: "";
   position: absolute;
   inset: 0;
