@@ -1,0 +1,286 @@
+/* =====================================================
+   ESTILOS COMUNES A TODAS LAS PÁGINAS
+   Cada página carga este archivo y después su CSS propio.
+   ===================================================== */
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER Y NAVEGACIÓN ===== */
+.header {
+  background-color: #2C5234;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #FFD700;
+}
+
+/* Botón hamburguesa: solo visible en móvil */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.dropdown-content a {
+  color: #222;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a.active {
+  background-color: #eee;
+  color: #2C5234;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+/* ===== HERO DE LAS SUBPÁGINAS ===== */
+/* La imagen de cada página se define en su CSS propio */
+.hero-seccion {
+  position: relative;
+  height: 45vh;
+  min-height: 300px;
+  background-image: url("../img/imagen1.jpg"); /* Imagen por defecto */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-seccion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-seccion .hero-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-seccion .hero-content {
+  max-width: 850px;
+}
+
+.hero-seccion .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-seccion .hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* ===== BOTÓN PRINCIPAL ===== */
+.cta-button {
+  display: inline-block;
+  background-color: #FFD700;
+  color: #222;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #2C5234;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #1B3320;
+  color: #ddd;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* El botón queda por encima del panel para poder cerrarlo */
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 30;
+  }
+
+  /* Panel lateral que entra desde la derecha por encima del contenido */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(80vw, 320px);
+    height: 100vh;
+    height: 100dvh;
+    padding: 5.5rem 1.25rem 2rem;
+    overflow-y: auto;
+    background-color: #2C5234;
+    box-shadow: -8px 0 24px rgba(0,0,0,0.35);
+    z-index: 25;
+    transform: translateX(100%);
+    visibility: hidden; /* evita que se pueda llegar a los enlaces con el teclado estando cerrado */
+    transition: transform 0.3s ease, visibility 0s linear 0.3s;
+  }
+
+  .nav.abierto {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s ease, visibility 0s;
+  }
+
+  .nav a {
+    display: block;
+    margin: 0;
+    padding: 0.75rem 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+
+  /* Fondo oscuro detrás del panel (lo crea menu.js) */
+  .menu-fondo {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9; /* por debajo de la cabecera (10) y por encima del contenido */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+
+  .menu-fondo.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+  }
+
+  /* Impide que la página haga scroll con el menú abierto */
+  body.menu-abierto {
+    overflow: hidden;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  /* En móvil los submenús se abren al tocar, no al pasar el ratón */
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.15);
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    padding-left: 1.5rem;
+  }
+
+  .dropdown-content a:hover,
+  .dropdown-content a.active {
+    background-color: transparent;
+    color: #FFD700;
+  }
+
+  .hero-seccion .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-seccion .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Sin animación para quien la tenga desactivada en su sistema */
+@media (prefers-reduced-motion: reduce) {
+  .nav,
+  .menu-fondo {
+    transition: none !important;
+  }
+}

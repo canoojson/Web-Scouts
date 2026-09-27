@@ -1,138 +1,16 @@
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* =====================================================
+   ESTILOS PROPIOS DE LAS PÁGINAS DE ACTIVIDADES
+   Los estilos comunes (cabecera, menú, hero, pie...) están en base.css
+   ===================================================== */
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fff;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ===== NAVEGACIÓN GLOBAL ===== */
-
-.header {
-  background-color: #2C5234;
-  color: #fff;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 60px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav a:hover,
-.nav a.active {
-  color: #FFD700;
-}
-
-/* Dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-.dropdown-content a {
-  color: #222;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #eee;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/* ===== HERO (MISMO ESTILO QUE INICIO Y CONTACTO) ===== */
-.hero-seccion {
-  position: relative;
-  height: 55vh;
-  background-image: url("../img/imagen1.jpg"); /* Imagen por defecto */
-  background-size: cover;
-  background-position: center;
-}
-
-/* Imagen de cabecera de cada sección (rutas relativas a este CSS) */
+/* ===== IMAGEN DE CABECERA DE CADA SECCIÓN ===== */
+/* Rutas relativas a este CSS */
 .hero-castores { background-image: url("../img/imagen1.jpg"); }
 .hero-manada   { background-image: url("../img/imagen2.jpg"); }
 .hero-tropa    { background-image: url("../img/imagen3.jpg"); }
 .hero-clan     { background-image: url("../img/imagen4.JPG"); }
 
-.hero-seccion::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.hero-content {
-  max-width: 850px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-/* ===== PUBLICACIÓN (MISMO ESTILO QUE BLOQUES DE CONTACTO) ===== */
+/* ===== PUBLICACIÓN ===== */
 main.container {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -141,10 +19,8 @@ main.container {
 .publicacion {
   background-color: #f7f7f7;
   border-radius: 12px;
-  padding: 0;
   overflow: hidden;
   display: flex;
-  gap: 0;
   box-shadow: 0 5px 12px rgba(0,0,0,0.12);
   flex-wrap: wrap;
 }
@@ -173,22 +49,8 @@ main.container {
   margin-bottom: 1rem;
 }
 
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #1B3320;
-  color: #ddd;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-
-  .hero-content h1 {
-    font-size: 2.4rem;
-  }
-
   .publicacion {
     flex-direction: column;
   }

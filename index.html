@@ -13,7 +13,9 @@
   <meta name="theme-color" content="#2C5234">
 
   <link rel="icon" href="img/logoImpeesa.png" type="image/png">
+  <link rel="stylesheet" href="CSS/base.css">
   <link rel="stylesheet" href="CSS/index.css">
+  <script src="Js/menu.js" defer></script>
 </head>
 
 <body>
@@ -21,8 +23,10 @@
     <div class="container header-container">
       <img src="img/imagenEncabezado.png" alt="Logo del Grupo Scout Impeesa 243" class="logo">
 
-      <nav class="nav">
-        <a href="#" class="active">Inicio</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">☰</button>
+
+      <nav class="nav" id="menu-principal">
+        <a href="index.html">Inicio</a>
         <div class="dropdown">
           <a href="#">Actividades</a>
           <div class="dropdown-content">

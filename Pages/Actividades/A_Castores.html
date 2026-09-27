@@ -13,7 +13,9 @@
   <meta name="theme-color" content="#2C5234">
 
   <link rel="icon" href="../../img/logoImpeesa.png" type="image/png">
+  <link rel="stylesheet" href="../../CSS/base.css">
   <link rel="stylesheet" href="../../CSS/actividades.css">
+  <script src="../../Js/menu.js" defer></script>
 </head>
 
 <body>
@@ -22,41 +24,43 @@
   <div class="container header-container">
     <img src="../../img/imagenEncabezado.png" alt="Logo del Grupo Scout Impeesa 243" class="logo">
 
-    <nav class="nav">
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">☰</button>
+
+    <nav class="nav" id="menu-principal">
       <a href="../../index.html">Inicio</a>
 
       <div class="dropdown">
         <a href="#">Actividades</a>
         <div class="dropdown-content">
-          <a href="../../Pages/Actividades/A_Castores.html">Castores</a>
-          <a href="../../Pages/Actividades/A_Manada.html">Manada</a>
-          <a href="../../Pages/Actividades/A_Tropa.html">Tropa</a>
-          <a href="../../Pages/Actividades/A_Clan.html">Clan</a>
+          <a href="../Actividades/A_Castores.html">Castores</a>
+          <a href="../Actividades/A_Manada.html">Manada</a>
+          <a href="../Actividades/A_Tropa.html">Tropa</a>
+          <a href="../Actividades/A_Clan.html">Clan</a>
         </div>
       </div>
 
       <div class="dropdown">
         <a href="#">Historia</a>
         <div class="dropdown-content">
-            <a href="../../Pages/Historia/H_Grupo.html">Grupo</a>
-            <a href="../../Pages/Historia/H_Escultismo.html">Escultismo</a>
-            <a href="../../Pages/Historia/H_Secciones.html">Secciones</a>
+            <a href="../Historia/H_Grupo.html">Grupo</a>
+            <a href="../Historia/H_Escultismo.html">Escultismo</a>
+            <a href="../Historia/H_Secciones.html">Secciones</a>
         </div>
       </div>
 
       <div class="dropdown">
         <a href="#">Documentos</a>
         <div class="dropdown-content">
-          <a href="../../Pages/Documentos/D_Inscripcion.html">Inscripción</a>
-          <a href="../../Pages/Documentos/D_Seguro.html">Seguro</a>
-          <a href="../../Pages/Documentos/D_CPTM.html">Cómo preparar tu mochila</a>
-          <a href="../../Pages/Documentos/D_Nudos.html">Nudos</a>
-          <a href="../../Pages/Documentos/D_Codigos.html">Códigos</a>
+          <a href="../Documentos/D_Inscripcion.html">Inscripción</a>
+          <a href="../Documentos/D_Seguro.html">Seguro</a>
+          <a href="../Documentos/D_CPTM.html">Cómo preparar tu mochila</a>
+          <a href="../Documentos/D_Nudos.html">Nudos</a>
+          <a href="../Documentos/D_Codigos.html">Códigos</a>
         </div>
       </div>
 
-      <a href="../../Pages/Galeria/galeria.html">Galería</a>
-      <a href="../../Pages/Contacto.html">Contacto</a>
+      <a href="../Galeria/galeria.html">Galería</a>
+      <a href="../Contacto.html">Contacto</a>
     </nav>
   </div>
 </header>

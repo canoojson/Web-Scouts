@@ -1,86 +1,7 @@
-/* ========== RESET BÁSICO ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fff;
-}
-
-/* ========== CONTENEDORES GENERALES ========== */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ========== HEADER Y NAVEGACIÓN ========== */
-.header {
-  background-color: #2C5234;
-  color: #fff;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 60px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav a:hover,
-.nav a.active {
-  color: #FFD700;
-}
-
-/* Dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-.dropdown-content a {
-  color: #222;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #eee;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/* =====================================================
+   ESTILOS PROPIOS DE LA PÁGINA DE INICIO
+   Los estilos comunes (cabecera, menú, pie...) están en base.css
+   ===================================================== */
 
 /* ========== HERO ========== */
 .hero {
@@ -121,21 +42,6 @@ body {
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-}
-
-.cta-button {
-  background-color: #FFD700;
-  color: #222;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #fff;
-  color: #2C5234;
 }
 
 /* ========== SECCIONES DE CONTENIDO ========== */
@@ -213,26 +119,9 @@ section {
 .join .cta-button {
   margin-top: 1rem; /* añadido: separa aún más el botón del texto */
 }
-/* ========== FOOTER ========== */
-.footer {
-  background-color: #1B3320;
-  color: #ddd;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-}
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-  }
-
-  .nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
   .hero-content h1 {
     font-size: 2rem;
   }
